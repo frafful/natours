@@ -9,6 +9,7 @@
             padding: 1.5rem 4rem;
             display: inline-block;
             position: relative;
+            font-size: $font-size-default;
         }
     
         &:hover {
@@ -22,7 +23,7 @@
         }
     
         &:active {
-            transform: translateY(- .1rem);
+            transform: translateY(-.1rem);
             box-shadow: 0 .5rem 1rem rgba($color-black, .2);
         }
     
@@ -48,7 +49,7 @@
                 background-color: $color-white;
             }
         }
-    
+
         &--animated {
             animation-name: moveUp;
             animation-duration: 2s;
@@ -57,4 +58,31 @@
             //animation-fill-mode: backwards;
         }
     
+    }
+
+    .btn-text {
+
+        &:link,
+        &:visited {
+            font-size: $font-size-default;
+            color: $color-primary;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid $color-primary;
+            padding: 3px;
+
+            transition: all .2s;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+            transform: translateY(0px);
+        }
     }
