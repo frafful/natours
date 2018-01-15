@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frafful/natours.git"
+    "url": "git+https://github.com/frafful/natours.git" 
   },
   "author": "Felipe Rafful",
   "license": "ISC",
